@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pacman {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#maze {
+    width: 100%;
+    height: 100%;
+    background-image: url('maze.png'); /* Placeholder for maze background */
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    #game-container {
+        max-width: 400px;
+        height: 400px;
+    }
+
+    #pacman {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #game-container {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    #pacman {
+        width: 15px;
+        height: 15px;
+    }
+}
